@@ -103,7 +103,7 @@
     background: rgba(47, 128, 237, 0.1);
     outline: 1px solid #2f80ed; }
   .booking__form-box.error input {
-    border: 1px solid #0089fa;
+    border: 1px solid #2f80ed;
     background-color: rgba(0, 137, 250, 0.1); }
   .booking__form-box .error-text {
     visibility: hidden;

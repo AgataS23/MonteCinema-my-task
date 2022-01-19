@@ -108,7 +108,7 @@
   }
 
   &__form-box.error input {
-    border: 1px solid rgb(0, 137, 250);
+    border: 1px solid $blue;
     background-color: rgba(0, 137, 250, .1);
   }
   &__form-box .error-text{
@@ -162,7 +162,6 @@
     height: 500px;
     max-width: 80%;
     border-radius: 8px;
-    // border: .5px solid $tuna;
     box-shadow: 0px 4px 22px rgba(52, 53, 65, 0.15);
     transition: bottom 0.5s;
   }
@@ -172,18 +171,7 @@
     letter-spacing: 0em;
     background-color: $white;
     color: $tuna;
-    
   }
-  // &__popup-close {
-  //   width: 311px;
-  //   height: 56px;
-  //   border-radius: 30px;
-  //   border: none;
-  //   background: $cherry-red;
-  //   color: $white;
-  //   @include robotoMono500;
-  //   margin-top: 90px;
-  // }
   &__show-popup {
     transform: translate(-50%, -50%) scale(1);
   }
