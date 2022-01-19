@@ -1,0 +1,190 @@
+.booking {
+  padding: 80px 32px 80px;
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 48px 48px;
+  }
+
+  &__heading {
+    @include headingEczar600;
+    font-size: 40px;
+    line-height: 41px;
+    margin-bottom: 12px;
+    @media (min-width: $tablet) {
+      font-size: 80px;
+      line-height: 82px;
+    }
+  }
+  &__span {
+    @include robotoMono400;
+    letter-spacing: 0.015em;
+    color: $tuna;
+    display: block;
+    margin-bottom: 48px;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: $tablet) {
+      padding: 0 64px;
+      width: 600px;
+      height: 498.24px;
+      border-radius: 24px;
+      background: $white;
+      box-shadow: 0px 4px 22px rgba(52, 53, 65, 0.15);
+      margin-bottom: 72px;
+    }
+  }
+  &__logo {
+    width: 183.64px;
+    height: 37.24px;
+    margin-bottom: 48px;
+    @media (min-width: $tablet) {
+      margin: 64px 0 40px;
+    }
+  }
+  &__text {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 48px;
+    @media (min-width: $tablet) {
+      margin-bottom: 40px;
+    }
+  }
+  &__form {
+    @media (min-width: $tablet) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__form-box{
+      margin-bottom: 5px;
+  }
+  &__form-box label {
+    font-family: "Roboto Mono", monospace;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    text-align: left;
+    color: $bittersweets;
+    margin-bottom: 12px;
+    @media (min-width: $tablet) {
+    }
+  }
+  &__form-box input {
+    display: block;
+    height: 55px;
+    width: 311px;
+    border-radius: 8px;
+    border: none;
+    background: $grey;
+    padding: 24px 16px 24px 24px;
+    margin: 12px 0 2px;
+    text-align: center;
+    @include roboto400;
+    line-height: 21px;
+    color: $jumbo;
+    @media (min-width: $tablet) {
+      margin-bottom: 2px;
+      width: 472px;
+    }
+  }
+  &__form-box input:hover {
+    background: $light-grey;
+  }
+  &__form-box input:active {
+    background: rgba(47, 128, 237, 0.1);
+    outline: 1px solid $blue;
+  }
+
+  &__form-box.error input {
+    border: 1px solid rgb(0, 137, 250);
+    background-color: rgba(0, 137, 250, .1);
+  }
+  &__form-box .error-text{
+    visibility: hidden;
+    margin: 2px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: $cherry-red;
+  }
+  &__form-box.error .error-text{
+    visibility: visible;
+  }
+  &__control-button{
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__send, &__popup-close {
+    width: 311px;
+    height: 56px;
+    border-radius: 30px;
+    border: none;
+    background: $cherry-red;
+    color: $white;
+    margin-top: 26px;
+    @include robotoMono500;
+    @media (min-width: $tablet) {
+      padding: 15px 40px;
+      width: 472px;
+    }
+  }
+  &__send:hover {
+    background: $totem-pole;
+  }
+  &__send:active {
+    background: $totem-pole;
+    outline: 5px solid $bittersweets;
+  }
+
+  &__popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    bottom: -140px;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: $white;
+    width: 600px;
+    height: 500px;
+    max-width: 80%;
+    border-radius: 8px;
+    // border: .5px solid $tuna;
+    box-shadow: 0px 4px 22px rgba(52, 53, 65, 0.15);
+    transition: bottom 0.5s;
+  }
+  &__popup-message {
+    @include roboto400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    background-color: $white;
+    color: $tuna;
+    
+  }
+  // &__popup-close {
+  //   width: 311px;
+  //   height: 56px;
+  //   border-radius: 30px;
+  //   border: none;
+  //   background: $cherry-red;
+  //   color: $white;
+  //   @include robotoMono500;
+  //   margin-top: 90px;
+  // }
+  &__show-popup {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}

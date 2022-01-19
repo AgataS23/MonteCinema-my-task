@@ -1,0 +1,432 @@
+@import url("https://fonts.googleapis.com/css2?family=Eczar:wght@600&family=Roboto+Mono:wght@400;500;700&family=Roboto:wght@400;700&display=swap");
+.booking {
+  padding: 80px 32px 80px; }
+  @media (min-width: 1024px) {
+    .booking {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 48px 48px; } }
+  .booking__heading {
+    font-family: "Eczar", serif;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #343541;
+    font-size: 40px;
+    line-height: 41px;
+    margin-bottom: 12px; }
+    @media (min-width: 1024px) {
+      .booking__heading {
+        font-size: 80px;
+        line-height: 82px; } }
+  .booking__span {
+    font-family: "Roboto Mono", monospace;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 0.015em;
+    color: #343541;
+    display: block;
+    margin-bottom: 48px; }
+  .booking__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    @media (min-width: 1024px) {
+      .booking__wrapper {
+        padding: 0 64px;
+        width: 600px;
+        height: 498.24px;
+        border-radius: 24px;
+        background: #ffffff;
+        box-shadow: 0px 4px 22px rgba(52, 53, 65, 0.15);
+        margin-bottom: 72px; } }
+  .booking__logo {
+    width: 183.64px;
+    height: 37.24px;
+    margin-bottom: 48px; }
+    @media (min-width: 1024px) {
+      .booking__logo {
+        margin: 64px 0 40px; } }
+  .booking__text {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 48px; }
+    @media (min-width: 1024px) {
+      .booking__text {
+        margin-bottom: 40px; } }
+  @media (min-width: 1024px) {
+    .booking__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
+  .booking__form-box {
+    margin-bottom: 5px; }
+  .booking__form-box label {
+    font-family: "Roboto Mono", monospace;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    text-align: left;
+    color: #f47073;
+    margin-bottom: 12px; }
+  .booking__form-box input {
+    display: block;
+    height: 55px;
+    width: 311px;
+    border-radius: 8px;
+    border: none;
+    background: #f0f0f0;
+    padding: 24px 16px 24px 24px;
+    margin: 12px 0 2px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #85868d; }
+    @media (min-width: 1024px) {
+      .booking__form-box input {
+        margin-bottom: 2px;
+        width: 472px; } }
+  .booking__form-box input:hover {
+    background: #e5e5e5; }
+  .booking__form-box input:active {
+    background: rgba(47, 128, 237, 0.1);
+    outline: 1px solid #2f80ed; }
+  .booking__form-box.error input {
+    border: 1px solid #0089fa;
+    background-color: rgba(0, 137, 250, 0.1); }
+  .booking__form-box .error-text {
+    visibility: hidden;
+    margin: 2px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #ec1115; }
+  .booking__form-box.error .error-text {
+    visibility: visible; }
+  .booking__control-button {
+    display: flex;
+    justify-content: flex-end; }
+  .booking__send, .booking__popup-close {
+    width: 311px;
+    height: 56px;
+    border-radius: 30px;
+    border: none;
+    background: #ec1115;
+    color: #ffffff;
+    margin-top: 26px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.015em;
+    text-align: center; }
+    @media (min-width: 1024px) {
+      .booking__send, .booking__popup-close {
+        padding: 15px 40px;
+        width: 472px; } }
+  .booking__send:hover {
+    background: #a60c0e; }
+  .booking__send:active {
+    background: #a60c0e;
+    outline: 5px solid #f47073; }
+  .booking__popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    bottom: -140px;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #ffffff;
+    width: 600px;
+    height: 500px;
+    max-width: 80%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 22px rgba(52, 53, 65, 0.15);
+    transition: bottom 0.5s; }
+  .booking__popup-message {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    background-color: #ffffff;
+    color: #343541; }
+  .booking__show-popup {
+    transform: translate(-50%, -50%) scale(1); }
+
+.navigation {
+  padding: 33px 32px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center; }
+  @media (min-width: 1024px) {
+    .navigation {
+      margin: 0 48px;
+      padding: 25px 0;
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      justify-content: space-between;
+      align-items: center; } }
+  .navigation__logo {
+    width: 183.64px; }
+    @media (min-width: 1024px) {
+      .navigation__logo {
+        width: 182.09px;
+        height: 37.24px; } }
+  .navigation__list {
+    list-style-type: none; }
+    @media (min-width: 1024px) {
+      .navigation__list {
+        display: flex;
+        flex-direction: row; } }
+  .navigation__item-link {
+    display: none; }
+    @media (min-width: 1024px) {
+      .navigation__item-link {
+        display: inline-block;
+        padding: 16px 30px;
+        width: 139px;
+        height: 48px;
+        font-family: "Roboto Mono", monospace;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        text-align: center;
+        text-decoration: none;
+        letter-spacing: 0.015em;
+        color: #ec1115; } }
+  .navigation__item {
+    text-decoration: none; }
+  .navigation__item-button {
+    padding: 16px 30px;
+    width: 110px;
+    height: 48px;
+    background: #ec1115;
+    border-radius: 24px;
+    color: #ffffff; }
+  .navigation__bars {
+    width: 32px;
+    height: auto; }
+    @media (min-width: 1024px) {
+      .navigation__bars {
+        display: none; } }
+
+@media (min-width: 1024px) {
+  .welcome {
+    padding: 0 48px 64px; } }
+
+@media (min-width: 1440px) {
+  .welcome__wrapper {
+    display: flex;
+    flex-direction: row; } }
+
+.welcome__wrapper-smaller {
+  padding: 40px 32px;
+  background-color: #fef6f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media (min-width: 1024px) {
+    .welcome__wrapper-smaller {
+      padding: 80px; } }
+  @media (min-width: 1440px) {
+    .welcome__wrapper-smaller {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      height: 679px;
+      padding: 80px 80px 96px; } }
+
+.welcome__heading {
+  font-family: "Eczar", serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #343541;
+  font-size: 48px;
+  line-height: 49px;
+  padding-bottom: 40px; }
+  @media (min-width: 1024px) {
+    .welcome__heading {
+      font-size: 80px;
+      line-height: 82px;
+      padding: 0 80px; } }
+  @media (min-width: 1440px) {
+    .welcome__heading {
+      font-size: 80px;
+      line-height: 82px;
+      text-align: left;
+      padding: 0 0 40px; } }
+
+.welcome__text {
+  font-family: "Roboto Mono", monospace;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 37px;
+  text-align: center;
+  padding-bottom: 40px; }
+  @media (min-width: 1024px) {
+    .welcome__text {
+      margin: 41px 76px; } }
+  @media (min-width: 1440px) {
+    .welcome__text {
+      text-align: left;
+      margin: 0; } }
+
+.welcome__btn {
+  width: 310px;
+  height: 64px;
+  border-radius: 30px;
+  border: none;
+  padding: 20px 40px;
+  margin: 0 auto;
+  background-color: #ec1115;
+  font-family: "Roboto Mono", monospace;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.015em;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff; }
+  @media (min-width: 1440px) {
+    .welcome__btn {
+      width: 256px;
+      margin: 0 auto 0 0; } }
+
+.welcome__btn:hover {
+  background: #a60c0e; }
+
+.welcome__btn:active {
+  background: #a60c0e;
+  outline: 5px solid #f47073; }
+
+.welcome__image {
+  display: none; }
+  @media (min-width: 1440px) {
+    .welcome__image {
+      display: inline-block;
+      width: 633px;
+      height: 679px; } }
+
+.welcome__movie-about {
+  display: flex;
+  padding: 64px 32px 24px;
+  text-transform: uppercase;
+  font-family: "Roboto Mono", monospace;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 37px;
+  letter-spacing: 0.015em;
+  justify-content: space-between; }
+  @media (min-width: 1024px) {
+    .welcome__movie-about {
+      padding: 64px 0 24px; } }
+  .welcome__movie-about--black {
+    color: #343541; }
+  .welcome__movie-about--invisible {
+    display: none; }
+    @media (min-width: 1024px) {
+      .welcome__movie-about--invisible {
+        display: inline; } }
+  .welcome__movie-about--red {
+    color: #ec1115; }
+
+.welcome__movie-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto; }
+  @media (min-width: 1024px) {
+    .welcome__movie-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; } }
+
+.welcome__movie-card {
+  padding: 24px;
+  width: 311px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  background: #ffffff;
+  color: #343541;
+  box-shadow: 0px 24px 78px rgba(0, 0, 0, 0.08); }
+  @media (min-width: 1024px) {
+    .welcome__movie-card {
+      width: 444px;
+      padding: 40px;
+      margin-bottom: 64px; } }
+  @media (min-width: 1440px) {
+    .welcome__movie-card {
+      width: 421px; } }
+  @media (min-width: 1440px) {
+    .welcome__movie-card--second {
+      padding-bottom: 71px; } }
+  @media (min-width: 1024px) {
+    .welcome__movie-card--third {
+      display: none; } }
+  @media (min-width: 1440px) {
+    .welcome__movie-card--third {
+      display: inline-block; } }
+
+.welcome__movie-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: left; }
+
+.welcome__movie-image {
+  width: 263px;
+  height: auto;
+  margin: 16px 0; }
+  @media (min-width: 1024px) {
+    .welcome__movie-image {
+      width: 364px; } }
+  @media (min-width: 1440px) {
+    .welcome__movie-image {
+      height: 191.62px;
+      width: 341px; } }
+
+.welcome__movie-summary {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0.04em;
+  text-align: justify; }
+  @media (min-width: 1024px) {
+    .welcome__movie-summary {
+      text-align: left; } }
+  @media (min-width: 1440px) {
+    .welcome__movie-summary {
+      text-align: left; } }
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }

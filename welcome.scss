@@ -1,0 +1,190 @@
+.welcome {
+  @media (min-width: $tablet) {
+    padding: 0 48px 64px;
+  }
+
+  &__wrapper {
+    @media (min-width: $desktop) {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  &__wrapper-smaller {
+    padding: 40px 32px;
+    background-color: $pink;
+    @include flexColumnCenter;
+    @media (min-width: $tablet) {
+      padding: 80px;
+    }
+    @media (min-width: $desktop) {
+      @include flexColumnLeft;
+      height: 679px;
+      padding: 80px 80px 96px;
+    }
+  }
+  &__heading {
+    @include headingEczar600;
+    font-size: 48px;
+    line-height: 49px;
+    padding-bottom: 40px;
+    
+    @media (min-width: $tablet) {
+      font-size: 80px;
+      line-height: 82px;
+      padding: 0 80px;
+    }
+    @media (min-width: $desktop) {
+      font-size: 80px;
+      line-height: 82px;
+      text-align: left;
+      padding: 0 0 40px;
+    }
+  }
+  &__text {
+    @include robotoMono400;
+    padding-bottom: 40px;
+    @media (min-width: $tablet) {
+      margin: 41px 76px;
+    }
+    @media (min-width: $desktop) {
+      text-align: left;
+      margin: 0;
+    }
+  }
+  &__btn {
+    width: 310px;
+    height: 64px;
+    border-radius: 30px;
+    border: none;
+    padding: 20px 40px;
+    margin: 0 auto;
+    background-color: $cherry-red;
+    font-family: "Roboto Mono", monospace;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.015em;
+    text-align: center;
+    text-decoration: none;
+    color: $white;
+    @media (min-width: $desktop) {
+      width: 256px;
+      margin: 0 auto 0 0;
+    }
+  }
+
+  &__btn:hover {
+    background: $totem-pole;
+  }
+  &__btn:active {
+    background: $totem-pole;
+    outline: 5px solid $bittersweets;
+  }
+  &__image {
+    display: none;
+    @media (min-width: $desktop) {
+      display: inline-block;
+      width: 633px;
+      height: 679px;
+    }
+  }
+
+  &__movie-about {
+    display: flex;
+    padding: 64px 32px 24px;
+    text-transform: uppercase;
+    font-family: "Roboto Mono", monospace;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 37px;
+    letter-spacing: 0.015em;
+    justify-content: space-between;
+    @media (min-width: $tablet) {
+      padding: 64px 0 24px;
+    }
+
+    &--black {
+      color: $tuna;
+    }
+    &--invisible {
+      display: none;
+      @media (min-width: $tablet) {
+        display: inline;
+      }
+    }
+    &--red {
+      color: $cherry-red;
+    }
+  }
+  &__movie-wrapper {
+    @include flexColumnCenter;
+    margin: 0 auto;
+    @media (min-width: $tablet) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  &__movie-card {
+    padding: 24px;
+    width: 311px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    background: $white;
+    color: $tuna;
+    box-shadow: 0px 24px 78px rgba(0, 0, 0, 0.08);
+    @media (min-width: $tablet) {
+      width: 444px;
+      padding: 40px;
+      margin-bottom: 64px;
+    }
+    @media (min-width: $desktop) {
+      width: 421px;
+    }
+    &--second {
+      @media (min-width: $desktop) {
+        padding-bottom: 71px;
+      }
+    }
+    &--third {
+      @media (min-width: $tablet) {
+        display: none;
+      }
+      @media (min-width: $desktop) {
+        display: inline-block;
+      }
+    }
+  }
+  &__movie-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  &__movie-image {
+    width: 263px;
+    height: auto;
+    margin: 16px 0;
+    @media (min-width: $tablet) {
+      width: 364px;
+    }
+    @media (min-width: $desktop) {
+      height: 191.62px;
+      width: 341px;
+    }
+  }
+  &__movie-summary {
+    @include roboto400;
+    line-height: 31px;
+    letter-spacing: 0.04em;
+    text-align: justify;
+    @media (min-width: $tablet) {
+      text-align: left;
+    }
+    @media (min-width: $desktop) {
+      text-align: left;
+    }
+  }
+}

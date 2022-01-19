@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monte Cinema</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="navigation">
+        <img src="./assets/logo.svg" alt="Monterail Cinema logo" class="navigation__logo">
+        <ul class="navigation__list" id="nav-ul">
+            <li class="navigation__item"><a class="navigation__item-link" href="#">Register</a></li>
+            <li class="navigation__item"><a class="navigation__item-link navigation__item-button" href="#">Login</a>
+            </li>
+            <li class="navigation__item"><img src="./assets/bars.svg" alt="hamburger menu" class="navigation__bars">
+            </li>
+        </ul>
+    </div>
+    <main>
+        <section class="welcome">
+            <article class="welcome__wrapper">
+                <div class="welcome__wrapper-smaller">
+                    <h1 class="welcome__heading">Welcome to the best cinema in Monterail</h1>
+                    <p class="welcome__text">Best movies, best experiences, best people. And all that doesn’t exist.
+                        Yikes.</p>
+                    <a class="welcome__btn" href="#booking">Book a ticket</a>
+                </div>
+                <img src="./assets/audience.jpg" class="welcome__image" alt="people watching a film in a cinema">
+            </article>
+            <div class="welcome__movie-about">
+                <span class="welcome__movie-about--black"> soon <span class="welcome__movie-about--invisible"> in the
+                        cinema </span></span>
+                <span class="welcome__movie-about--red">see all</span>
+            </div>
+            <div class="welcome__movie-wrapper">
+                <div class="welcome__movie-card welcome__movie-card--first">
+                    <h2 class="welcome__movie-title">Predator</h2>
+                    <img src="./assets/predator.png" alt="Predator" class="welcome__movie-image">
+                    <p class="welcome__movie-summary">A team of commandos on a mission in a Central American jungle find
+                        themselves hunted by an extraterrestrial warrior.</p>
+                </div>
+                <div class="welcome__movie-card welcome__movie-card--second">
+                    <h2 class="welcome__movie-title">Commando</h2>
+                    <img src="./assets/commando.png" alt="Commando" class="welcome__movie-image">
+                    <p class="welcome__movie-summary">A retired Special Forces colonel tries to save his daughter, who
+                        was abducted by his former subordinate.</p>
+                </div>
+                <div class="welcome__movie-card welcome__movie-card--third">
+                    <h2 class="welcome__movie-title">Terminator 2</h2>
+                    <img src="./assets/terminator.png" alt="Terminator 2" class="welcome__movie-image">
+                    <p class="welcome__movie-summary">A team of commandos on a mission in a Central American jungle find
+                        themselves hunted by an extraterrestrial warrior.</p>
+                </div>
+            </div>
+        </section>
+        <section class="booking" id="booking">
+            <h2 class="booking__heading">Online booking</h2>
+            <span class="booking__span">Soon</span>
+            <div class="booking__wrapper">
+                <img src="./assets/logo.svg" class="booking__logo" alt="Logo Monte Cinema">
+                <p class="booking__text">Leave us your email address and we’ll let you know as soon as the machine will
+                    start.</p>
+                <form class="booking__form">
+                    <div class="booking__form-box">
+                        <label for="email" class="booking__label">email</label>
+                        <input type="email" class="booking__input" id="email"
+                            placeholder="e.g. mynameislaura@mail.com">
+                        <p class="error-text">error</p>
+                    </div>
+                    <div class="booking__control-button">
+                        <button class="booking__send">Let me know!</button>
+                    </div>
+                    <div class="booking__popup">
+                        <p class="booking__popup-message">The email has been added to the list</p>
+                        <button data-close-button class="booking__popup-close">Close</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Eczar:wght@600&family=Roboto+Mono:wght@400;500;700&family=Roboto:wght@400;700&display=swap");
+
+@import "_variables";
+@import "_mixins";
+@import "booking";
+@import "navigation";
+@import "welcome";
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
